@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div class="calculator-screen"><input type="text" id="display"></div>
+            <div class="keys">
+                <div class="operation-keys">
+                    <button onclick="getInput('+')">+</button>
+                    <button onclick="getInput('-')">-</button>
+                    <button onclick="getInput('*')">&times;</button>
+                    <button onclick="getInput('/')">÷</button>
+                </div>
+                <div class="main-keys">
+                    <div class="keys-digits">
+                        <div class="section">
+                            <button onclick="getInput('7')">7</button>
+                            <button onclick="getInput('8')">8</button>
+                            <button onclick="getInput('9')">9</button>
+                        </div>
+                        <div class="section">
+                            <button onclick="getInput('4')">4</button>
+                            <button onclick="getInput('5')">5</button>
+                            <button onclick="getInput('6')">6</button>
+                        </div>
+                        <div class="section">
+                            <button onclick="getInput('1')">1</button>
+                            <button onclick="getInput('2')">2</button>
+                            <button onclick="getInput('3')">3</button>
+                        </div>
+                        <div class="section">
+                            <button onclick="getInput('0')">0</button>
+                            <button onclick="getInput('.')">.</button>
+                            <button onclick="clearScreen()">AC</button>
+                        </div>
+                    </div>
+                    <div class="evaluate">
+                        <button class="delete" onClick="del()">DEL</button>
+                        <button class="equal-to" onclick="evaluation()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
